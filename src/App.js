@@ -9,8 +9,6 @@ import Detail from "./components/Detail/Detail"
 import Form from './components/Form/Form';
 import Favorites from './components/Favorites/Favorites';
 
-const EMAIL = 'gabo125@gmail.com'
-const PASSWORD = 'soyhenry'
 
 function App() {
 const navigate = useNavigate();
@@ -50,18 +48,7 @@ const login = (userData)=> {
       })
    }
 
-   const [characters, setCharacters] = useState([{
-      id: 1,
-      name: 'Rick Sanchez',
-      status: 'Alive',
-      species: 'Human',
-      gender: 'Male',
-      origin: {
-         name: 'Earth (C-137)',
-         url: 'https://rickandmortyapi.com/api/location/1',
-      },
-      image: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg',
-   }]);
+   const [characters, setCharacters] = useState([]);
    
    const location = useLocation();
    
